@@ -9,7 +9,7 @@ namespace Medical_Management_System.Controllers
     [ApiController]
     public class SupplierController : ControllerBase
     {
-        private readonly MedicalDbContext _context;   //readonly decclare it will assign once and only should be in contructor
+        private readonly MedicalDbContext _context;   //readonly decclare --it will assign once and it should be in constructor only
 
 
 
