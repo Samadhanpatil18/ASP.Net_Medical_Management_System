@@ -11,7 +11,7 @@ namespace Medical_Management_System.Controllers
     {
 
 
-        private readonly MedicalDbContext _context;
+          MedicalDbContext _context;
 
         public ProductController(MedicalDbContext mdbc)
         {
@@ -29,6 +29,14 @@ namespace Medical_Management_System.Controllers
             return Ok(product);
 
 
+        }
+
+
+        [HttpGet]
+        public IActionResult GetAllProducts()
+        {
+            var productData = _context.Products.ToList();
+            return Ok(productData);
         }
 
 

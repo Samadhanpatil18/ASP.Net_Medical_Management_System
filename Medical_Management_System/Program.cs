@@ -1,4 +1,4 @@
-
+using System.Data.Common;
 using Medical_Management_System.Data;
 using Microsoft.EntityFrameworkCore;
 
