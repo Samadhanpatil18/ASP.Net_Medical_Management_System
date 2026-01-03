@@ -23,5 +23,11 @@ namespace Medical_Management_System.Controllers
 
             return Ok(medical);
         }
+        [HttpGet]
+        public IActionResult getMedicleData()
+        {
+            var MedicleData = _context.Medicals.ToList();
+            return Ok (MedicleData);
+        }
     }
 }

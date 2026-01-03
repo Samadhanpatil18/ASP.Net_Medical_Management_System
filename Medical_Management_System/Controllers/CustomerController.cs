@@ -29,6 +29,14 @@ namespace Medical_Management_System.Controllers
 
         }
 
+        [HttpGet]
+        public IActionResult getAllcustomers()
+        {
+            var customersList = _context.Customers.ToList();
+            return Ok(customersList);
+
+        }
+
 
 
     }
